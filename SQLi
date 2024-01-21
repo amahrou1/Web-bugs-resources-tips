@@ -8,3 +8,16 @@
 
 
 1- resources
+.
+.
+.
+2- tips and tricks
+
+- try website IP instead of domain so waf cannot block you use shodan
+- if you're able to find a JSON POST-based potential SQL injection (SQLi), remember to execute the SQLMAP query with -u and --data using JSON input.
+- change Content-type for example changing to Content-Type: application/x-www-form-urlencoded this might alllow u to exploit Incorrect Server-Side Handling,bypass waf
+- change request method to get or post
+- change http version
+- change https to http
+- after finding param get 404 we can use waybackurls -dates to find other avialble archived version of the same param
+-
